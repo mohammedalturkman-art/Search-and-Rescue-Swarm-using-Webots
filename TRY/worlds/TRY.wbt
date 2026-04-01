@@ -1,0 +1,422 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/k-team/khepera3/protos/Khepera3.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/Parquetry.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/BrushedAluminium.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/dji/mavic/protos/Mavic2Pro.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.38581646852950324 0.38969533992456895 0.8362315436842221 1.7388533222311713
+  position -0.0949502524223945 -2.8289304884989996 2.894652796118489
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+DEF DRONE Mavic2Pro {
+  translation -0.963557 -0.972042 0.185
+  rotation 0 0 1 0.785398
+  name "drone"
+  bodySlot [
+    Receiver {
+      channel 1
+    }
+    Emitter {
+      channel 1
+    }
+  ]
+  cameraSlot [
+    Camera {
+      rotation 0 1 0 1.5708
+      width 400
+      height 240
+      recognition Recognition {
+      }
+    }
+  ]
+}
+RectangleArena {
+  name "rectangle arena(1)"
+  floorSize 2 2
+  floorTileSize 0.25 0.25
+  floorAppearance Parquetry {
+    colorOverride 0.698039 0.635294 0.145098
+    IBLStrength 0
+  }
+  wallThickness 0.05
+  wallHeight 0.12
+  wallAppearance BrushedAluminium {
+    colorOverride 0.694118 0.407843 0.317647
+  }
+}
+DEF b1 Solid {
+  translation 0.736138 -0.564761 0.05
+  rotation 0.5773509358554485 0.5773489358556708 0.5773509358554485 2.0944
+  children [
+    Shape {
+      appearance PBRAppearance {
+        roughness 0.9
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(8)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+}
+DEF b2 Solid {
+  translation 0.202504 0.0769036 0.05
+  rotation 0.5773509358554485 0.5773489358556708 0.5773509358554485 2.0944
+  children [
+    Shape {
+      appearance PBRAppearance {
+        roughness 0.9
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(7)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+}
+DEF b3 Solid {
+  translation 0.809763 0.638447 0.04
+  rotation 0.5773509358554485 0.5773489358556708 0.5773509358554485 2.0944
+  children [
+    Shape {
+      appearance PBRAppearance {
+        roughness 0.9
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(6)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+}
+DEF b4 Solid {
+  translation -0.116725 0.5454 0.0499999
+  rotation 0.5773509358554485 0.5773489358556708 0.5773509358554485 2.0944
+  children [
+    Shape {
+      appearance PBRAppearance {
+        roughness 0.9
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(5)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+}
+DEF w1 Solid {
+  translation -0.71667 -0.141493 0.0600027
+  rotation -3.3977899999752476e-06 1.73923999998733e-06 -0.9999999999927152 -1.5707953071795862
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.5 0.2 0.1
+        roughness 0.9
+      }
+      geometry Box {
+        size 0.02 0.6 0.12
+      }
+    }
+  ]
+  name "solid(4)"
+  boundingObject Box {
+    size 0.02 0.6 0.12
+  }
+}
+DEF b5 Solid {
+  translation -0.706394 0.44121 0.05
+  rotation 0.5773509358554485 0.5773489358556708 0.5773509358554485 2.0944
+  children [
+    Shape {
+      appearance PBRAppearance {
+        roughness 0.9
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(3)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+}
+DEF w2 Solid {
+  translation 0.407503 0.82259 0.06
+  rotation 1 0 0 -3.1415853071795863
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.5 0.2 0.1
+        roughness 0.9
+      }
+      geometry Box {
+        size 0.02 0.4 0.12
+      }
+    }
+  ]
+  name "solid(2)"
+  boundingObject Box {
+    size 0.02 0.4 0.12
+  }
+}
+DEF w3 Solid {
+  translation 0.459512 -0.813221 0.0599933
+  rotation -1 0 0 -5.307179586466759e-06
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.5 0.2 0.1
+        roughness 0.9
+      }
+      geometry Box {
+        size 0.02 0.4 0.12
+      }
+    }
+  ]
+  name "solid(1)"
+  boundingObject Box {
+    size 0.02 0.4 0.12
+  }
+}
+DEF w4 Solid {
+  translation 0.58204 0.172648 0.06
+  rotation 0.7071062811856401 0.7071072811860378 1.2264404877024328e-06 -3.1415853071795863
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0.5 0.2 0.1
+        roughness 0.9
+      }
+      geometry Box {
+        size 0.02 0.9 0.12
+      }
+    }
+  ]
+  boundingObject Box {
+    size 0.02 0.9 0.12
+  }
+}
+Khepera3 {
+  translation -0.868612 -0.530308 -0.00351627
+  rotation -9.831394399994448e-05 0.9999883484872956 0.004826305421295791 0.001099606720695227
+  name "khepera3"
+  controller "khepera3_rescue_controller"
+  turretSlot [
+    Compass {
+    }
+    GPS {
+    }
+    Emitter {
+      channel 2
+    }
+    Receiver {
+      channel 2
+    }
+  ]
+}
+DEF VICTIM_1 Solid {
+  translation 0.563698 -0.90447 0.0299922
+  rotation -0.1111452303140942 -0.9419155520221271 0.3169255916414432 1.444630946638165e-16
+  children [
+    DEF VICTIM_1 Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        roughness 0.4
+        metalness 0
+        emissiveColor 0.2 0 0
+      }
+      geometry Cylinder {
+        height 0.06
+        radius 0.03
+      }
+    }
+  ]
+  name "VICTIM_1"
+  model "VICTIM_1"
+  boundingObject Cylinder {
+    height 0.06
+    radius 0.03
+  }
+  physics Physics {
+    mass 0.02
+  }
+  recognitionColors [
+    1 0 0
+  ]
+}
+DEF VICTIM_2 Solid {
+  translation -0.840123 0.918202 0.029992150968540212
+  rotation 0.5905967113434082 0.1608541053489125 0.7907727115567101 8.942906392852895e-17
+  children [
+    DEF VICTIM_1 Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        roughness 0.4
+        metalness 0
+        emissiveColor 0.2 0 0
+      }
+      geometry Cylinder {
+        height 0.06
+        radius 0.03
+      }
+    }
+  ]
+  name "VICTIM_2"
+  model "VICTIM_2"
+  boundingObject Cylinder {
+    height 0.06
+    radius 0.03
+  }
+  physics Physics {
+    mass 0.02
+  }
+  recognitionColors [
+    0.9 0.1 0.1
+  ]
+}
+DEF VICTIM_3 Solid {
+  translation 0.945641 0.338952 0.029992150968540215
+  rotation -0.16060324647829194 -0.9436991328628764 0.2892032915692493 8.38778388054669e-17
+  children [
+    DEF VICTIM_1 Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        roughness 0.4
+        metalness 0
+        emissiveColor 0.2 0 0
+      }
+      geometry Cylinder {
+        height 0.06
+        radius 0.03
+      }
+    }
+  ]
+  name "VICTIM_3"
+  model "VICTIM_3"
+  boundingObject Cylinder {
+    height 0.06
+    radius 0.03
+  }
+  physics Physics {
+    mass 0.02
+  }
+  recognitionColors [
+    0.8 0.2 0.2
+  ]
+}
+Robot {
+  translation 0 0 1
+  children [
+    Emitter {
+      name "emitter_k3"
+      channel 2
+    }
+    Emitter {
+      channel 1
+    }
+    Receiver {
+      channel 1
+    }
+  ]
+  name "supervisor"
+  controller "supervisor_controller"
+  supervisor TRUE
+}
+E-puck {
+  translation -0.713187 -0.820577 -6.46112e-05
+  rotation 0 0 1 -5.307179586466759e-06
+  name "epuck2"
+  controller "epuck_controller"
+  turretSlot [
+    Camera {
+      translation 0.02 0.03 0
+      rotation 0 1 0 0
+      fieldOfView 1.05
+      width 320
+      height 240
+      far 2
+      recognition Recognition {
+        maxRange 2
+      }
+    }
+    Compass {
+    }
+    GPS {
+    }
+    Emitter {
+      channel 1
+    }
+    Receiver {
+      channel 1
+    }
+    Lidar {
+      rotation 0 1 0 0
+      horizontalResolution 360
+      fieldOfView 6.28318
+      numberOfLayers 1
+      minRange 0.02
+      maxRange 1.25
+    }
+  ]
+}
+E-puck {
+  translation -0.551998 -0.820036 -6.46112e-05
+  rotation 0 0 1 -5.307179586466759e-06
+  name "epuck1"
+  controller "epuck_controller"
+  turretSlot [
+    Camera {
+      translation 0.02 0.03 0
+      rotation 0 1 0 0
+      fieldOfView 1.05
+      width 320
+      height 240
+      far 2
+      recognition Recognition {
+        maxRange 2
+      }
+    }
+    Compass {
+    }
+    GPS {
+    }
+    Receiver {
+      channel 1
+    }
+    Emitter {
+      channel 1
+    }
+    Lidar {
+      rotation 0 1 0 0
+      horizontalResolution 360
+      fieldOfView 6.28318
+      numberOfLayers 1
+      minRange 0.02
+      maxRange 1.25
+    }
+  ]
+}
