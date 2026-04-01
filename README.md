@@ -41,8 +41,9 @@ The system is designed to highlight coordination, communication, and intelligent
 
 1. Install Webots R2025a
 2. Clone this repository
-3. Open the project world file in Webots
-4. Run the simulation
+3. Unzip the file
+4. Open the project world file in Webots
+5. Run the simulation
 
 ## Future Improvements
 
