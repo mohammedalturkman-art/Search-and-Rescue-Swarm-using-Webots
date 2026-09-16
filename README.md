@@ -58,5 +58,3 @@ Developed as a university graduation project by a team of Automation students at
 Mhammed Hassan Al-Turkman.
 Sofian Mohammed Al-sowayah.
 Yahya Fuad Bin-Khalaf.
-
-Hello. ouda. and R9.
